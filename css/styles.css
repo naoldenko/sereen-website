@@ -337,3 +337,111 @@ li {
     }
   }
 }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+@media only screen and (max-width: 1024px)  {
+  h1 {
+    font-size: 30px;
+  }
+
+  ul {
+    margin-top: 90px;
+  }
+
+  .text {
+    width: 700px;
+    font-size: 20px;
+  }
+
+  #slogan-background {
+    margin-top: 130px;
+  }
+
+  #how-break {
+    font-size: 60px;
+  }
+
+  #slogan {
+    margin-top: 120px;
+    margin-bottom: 275px;
+    font-size: 40px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .flex-phone {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-slogan {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #mh-one {
+    width: 445px;
+    height: 330px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  #music-three {
+    width: 445px;
+    height: 330px;
+    margin-top: -70px;
+  }
+
+  #music-four {
+    width: 445px;
+    height: 330px;
+    margin-top: -200px;
+  };
+
+  .image {
+    width: 440px;
+    height: 330px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  .navbar:hover {
+    color: black;
+    font-size: 41px;
+    cursor: pointer;
+  }
+
+  #scroll {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: scroll;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translate(0px, 0px);
+    }
+
+    100% {
+      transform: translate(0px, 20px);
+    }
+  }
+}
