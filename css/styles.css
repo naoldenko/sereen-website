@@ -79,7 +79,10 @@ body {
   margin-bottom: 225px;
   font-size: 50px;
   width: 50%;
-  filter: drop-shadow(10px 17px 28px #555);
+}
+
+#slogan, #how-break, #team-text{
+  filter: drop-shadow(7px -13px 0.1px  #A8D1D1);
 }
 
 #how-break {
@@ -258,7 +261,11 @@ li {
   }
 
   #how-break {
-    font-size: 45px;
+    font-size: 35px;
+  }
+
+  #product {
+    margin-top: -30px;
   }
 
   #slogan {
@@ -287,7 +294,7 @@ li {
     width: 345px;
     height: 230px;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: -100px;
   }
 
   #music-three {
@@ -513,7 +520,7 @@ li {
   #notable {
     font-size: 25px;
   }
-  
+
   #logo {
     width: 200px;
     height: 200px;
@@ -563,6 +570,7 @@ li {
   
   #product {
     margin-bottom: 75px;
+    margin-top: -50px;
   }
   
   #team,
@@ -662,7 +670,7 @@ li {
     width: 495px;
     height: 330px;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: -100px;
   }
 
   #music-three {
