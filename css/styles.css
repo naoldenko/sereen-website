@@ -29,6 +29,10 @@ body {
   margin-bottom: -0.1px;
 }
 
+#mc_embed_signup {
+  color: black;
+}
+
 #product-text {
   background-color: white;
   border-radius: 50px;
@@ -88,9 +92,10 @@ body {
   width: 50%;
 }
 
-#slogan, #how-break, #team-text{
+/* #slogan, #how-break, #team-text{
   filter: drop-shadow(7px -13px 0.1px  #A8D1D1);
 }
+*/
 
 #how-break {
   margin-top: -200px;
@@ -256,6 +261,13 @@ li {
 
   ul {
     margin-top: 90px;
+  }
+
+  #mc_embed_signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
   }
 
   #flex-team {
