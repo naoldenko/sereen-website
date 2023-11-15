@@ -264,10 +264,7 @@ li {
   }
 
   #mc_embed_signup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
+    width: 350px!important;
   }
 
   #flex-team {
@@ -390,10 +387,7 @@ li {
   }
 
   #mc_embed_signup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
+    width: 350px!important;
   }
   .text {
     width: 700px;
@@ -511,10 +505,7 @@ li {
   }
 
   #mc_embed_signup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    width: 55%!important;
   }
 
   #product-text {
