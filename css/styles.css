@@ -64,6 +64,13 @@ body {
   border-radius: 50px;
 }
 
+#flex-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 #music-four {
   width: 725px;
   height: 435px;
@@ -251,6 +258,13 @@ li {
     margin-top: 90px;
   }
 
+  #flex-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .text {
     width: 320px;
     font-size: 20px;
@@ -368,6 +382,13 @@ li {
     font-size: 30px;
   }
 
+  #flex-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   #slogan-background {
     margin-top: 130px;
   }
@@ -477,6 +498,13 @@ li {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 35px;
+  }
+
+  #flex-team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
   .flex-phone {
