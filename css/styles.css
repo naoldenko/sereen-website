@@ -389,6 +389,12 @@ li {
     margin-top: 90px;
   }
 
+  #mc_embed_signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+  }
   .text {
     width: 700px;
     font-size: 30px;
@@ -502,6 +508,13 @@ li {
 
   ul {
     margin-top: 90px;
+  }
+
+  #mc_embed_signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
   }
 
   #product-text {
