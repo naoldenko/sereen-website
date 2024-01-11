@@ -20,6 +20,8 @@ video {
   filter: drop-shadow(5px 5px 10px #555);
   margin-top: 40px;
   border-radius: 50px;
+  -webkit-backface-visibility: hidden; /* WebKit-based browsers like Safari */
+  backface-visibility: hidden; 
 }
 
 #video {
@@ -67,6 +69,8 @@ video {
   flex-direction: row;
   justify-content: center;
   filter: drop-shadow(5px 5px 10px #555);
+  -webkit-backface-visibility: hidden; /* WebKit-based browsers like Safari */
+  backface-visibility: hidden; 
 }
 
 .flex-slogan {
@@ -104,6 +108,8 @@ video {
   margin-bottom: 290px;
   margin-right: 10px;
   filter: drop-shadow(45px 45px 50px #A8D1D1);
+  -webkit-backface-visibility: hidden; /* WebKit-based browsers like Safari */
+  backface-visibility: hidden; 
 }
 
 #slogan {
@@ -229,6 +235,8 @@ li {
   border-radius: 20px;
   margin-bottom: 260px;
   filter: drop-shadow(15px 15px 20px #555);
+  -webkit-backface-visibility: hidden; /* WebKit-based browsers like Safari */
+  backface-visibility: hidden; 
 }
 
 #mh-one {
@@ -237,6 +245,8 @@ li {
   border-radius: 20px;
   margin-top: 50px;
   filter: drop-shadow(15px 15px 20px #555);
+  -webkit-backface-visibility: hidden; /* WebKit-based browsers like Safari */
+  backface-visibility: hidden; 
 }
 
 .pic {
@@ -244,6 +254,8 @@ li {
   height: 150px;
   border-radius: 100px;
   filter: drop-shadow(15px 25px 30px #A8D1D1);
+  -webkit-backface-visibility: hidden; /* WebKit-based browsers like Safari */
+  backface-visibility: hidden; 
 }
 
 .icon {
