@@ -301,6 +301,14 @@ li {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  ul {
+    margin-top: 20px!important;
+  }
+
+  #scroll {
+    margin-top: 30px!important;
+  }
+
   #video {
     flex-direction: column;
   }
