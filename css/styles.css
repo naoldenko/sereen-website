@@ -302,16 +302,20 @@ li {
 @media only screen and (max-width: 600px) {
 
   #logo {
-    height: 175px;
-    width: 175px;
+    height: 155px;
+    width: 155px;
   }
 
   ul {
-    margin-top: 15px!important;
+    margin-top: -13px!important;
   }
 
   #scroll {
-    margin-top: 25px!important;
+    margin-top: 4px!important;
+  }
+
+  #welser {
+    margin-top: 175px!important;
   }
 
   #video {
