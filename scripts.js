@@ -5,6 +5,5 @@ gtag('js', new Date());
 gtag('config', 'G-89YPW531YB');
 
 // AOS Initialization
-AOS.init({
-    duration: 1200,})
-    window.addEventListener('load', AOS.refresh)
+AOS.init({duration: 1200,})
+window.addEventListener('load', AOS.refresh)
