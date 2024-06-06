@@ -48,11 +48,10 @@ h6,
 }
 
 .logo-img {
-    width: 40px; /* Adjust the width as needed */
-    margin-right: 10px; /* Add margin to separate the logo from the text */
+    width: 40px;
+    margin-right: 10px;
 }
 
-/* Change the font for "Sereen" */
 .navbar-brand h1 {
     font-family: 'Quicksand', sans-serif;
 }
@@ -442,7 +441,7 @@ h6,
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
-    padding-top: 9rem;
+    padding-top: 10rem;
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
@@ -453,6 +452,23 @@ h6,
         right 0px top 50%,
         center top;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 992px) {
+    .footer .row.justify-content-center {
+        justify-content: center;
+    }
+
+    .footer .footer-link {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer .footer-link {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .footer .btn.btn-social {
