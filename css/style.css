@@ -295,6 +295,11 @@ h6,
 /*** Feature ***/
 .feature-item {
     transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
 }
 
 .feature-item:hover {
@@ -306,14 +311,25 @@ h6,
     background-color: #a8d1d145;
 }
 
-#feature .row {
-    display: flex;
-    justify-content: center;
+.pic {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
 }
 
-#feature .feature-item {
-    display: flex;
-    flex-direction: column;
+#linkedin-image-team {
+    width: 24px;
+    height: 24px;
+}
+
+a#linkedin {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a#linkedin img {
+    width: 24px;
+    height: 24px;
 }
 
 /*** Pricing ***/
