@@ -312,24 +312,27 @@ h6,
 }
 
 .pic {
-    max-width: 50%;
+    max-width: 150px;
     height: auto;
     border-radius: 50%;
 }
 
-#linkedin-image-team {
-    width: 24px;
-    height: 24px;
-}
-
-a#linkedin {
-    display: inline-block;
+.btn.btn-social {
     margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    border: 1px solid var(--primary);
+    border-radius: 40px;
+    transition: .3s;
 }
 
-a#linkedin img {
-    width: 24px;
-    height: 24px;
+.btn.btn-social:hover {
+    color: var(--primary);
+    border: 1px solid var(--secondary);
 }
 
 /*** Pricing ***/
