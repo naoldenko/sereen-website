@@ -292,7 +292,6 @@ h6,
     }
 }
 
-
 /*** Feature ***/
 .feature-item {
     transition: .5s;
@@ -305,6 +304,16 @@ h6,
 
 .custom-bg {
     background-color: #a8d1d145;
+}
+
+#feature .row {
+    display: flex;
+    justify-content: center;
+}
+
+#feature .feature-item {
+    display: flex;
+    flex-direction: column;
 }
 
 /*** Pricing ***/
