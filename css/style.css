@@ -311,7 +311,7 @@ h6,
     }
 }
 
-#mc-embedded-subscribe {
+.button.btn.btn{
     margin-left: 1rem;
     position: relative;
     overflow: hidden;
@@ -322,28 +322,28 @@ h6,
     padding: .75rem 1.5rem;
     border-radius: .25rem;
     cursor: pointer;
-    transition: background-color 0.5s, color 0.3s;
+    transition: 0.3s;
 }
 
-#mc-embedded-subscribe:hover {
+.button.btn.btn:hover {
+    transition: 0.5s;
     background: linear-gradient(to bottom right, var(--secondary), var(--primary));
     color: #FFFFFF;
 }
 
-#mc-embedded-subscribe::after {
-    content: "";
+.button.btn.btn::after {
     position: absolute;
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
+    transition: .5s;
     z-index: -1;
     opacity: 0;
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
 }
 
-#mc-embedded-subscribe:hover::after {
+.button.btn.btn:hover::after {
     opacity: 1;
 }
 
