@@ -286,13 +286,44 @@ h6,
 }
 
 #waitlist .mc-field-group input {
+    flex: 1;
     width: 100%;
     padding: .5rem;
     border: 1px solid var(--primary);
     border-radius: 2rem;
 }
 
+.input-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.input-group-append {
+    margin-left: -1px;
+    flex-shrink: 0;
+}
+
 #mc-embedded-subscribe {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    color: #FFFFFF;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#mc-embedded-subscribe:hover {
+    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    color: #FFFFFF;
+}
+
+
+#mc-embedded-subscribe {
+    margin-left: 1rem;
     position: relative;
     overflow: hidden;
     border: none;
@@ -329,8 +360,9 @@ h6,
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     padding: 16rem 0 0 0;
+    padding-bottom: 4rem;
     background:
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
@@ -345,7 +377,7 @@ h6,
 
 @media (max-width: 991.98px) {
     .hero-header {
-        padding: 6rem 0 9rem 0;
+        padding: 8rem 0 9rem 0;
     }
 }
 
