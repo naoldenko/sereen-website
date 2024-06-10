@@ -11,10 +11,8 @@
     };
     spinner();
     
-    
     // Initiate the wowjs
     new WOW().init();
-
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -24,7 +22,6 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
-
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
@@ -42,7 +39,6 @@
         }
     });
     
-    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -56,13 +52,14 @@
         return false;
     });
 
-
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 2000
+        time: 2000,
+        formatter: function (n) {
+            return n + "+";
+        }
     });
-
 
     // Screenshot carousel
     $(".screenshot-carousel").owlCarousel({
@@ -72,7 +69,6 @@
         dots: true,
         items: 1
     });
-
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -100,4 +96,3 @@
     });
     
 })(jQuery);
-
