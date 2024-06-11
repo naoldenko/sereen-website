@@ -22,6 +22,15 @@
     opacity: 1;
 }
 
+.loading-text {
+    font-size: 1rem;
+    animation: grow 1s infinite alternate;
+}
+
+@keyframes grow {
+    0% { font-size: 1rem; } /* Start with initial font size */
+    100% { font-size: 1.5rem; } /* Grow to a larger font size */
+}
 
 /*** Heading ***/
 h1,
@@ -404,14 +413,16 @@ h6,
 }
 
 /*** About ***/
-.larger-image {
-    margin-top: -2rem;
-    margin-left: -2rem;
-    max-width: 110%;
-    max-height: 150%;
-    width: auto;
-    height: 110%;
-    object-fit: cover;
+@media (max-width: 991.98) {
+    .larger-image {
+        margin-top: -2rem;
+        margin-left: -2rem;
+        max-width: 110%;
+        max-height: 150%;
+        width: auto;
+        height: 110%;
+        object-fit: cover;
+    }
 }
 
 /*** Team ***/
