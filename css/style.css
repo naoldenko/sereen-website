@@ -252,7 +252,7 @@ h6,
         left: 0;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: white;
@@ -311,7 +311,18 @@ h6,
     }
 }
 
-.button.btn.btn{
+#mc_embed_signup div.mce_inline_error {
+    margin-top: 0.5rem !important;
+    padding: 5px 10px !important;
+    background-color: #f8d7da !important;
+    border-radius: 0.5rem !important;
+    border-color: #f5c2cf !important;
+    z-index: 1 !important;
+    font-weight: normal !important;
+    color: #842028 !important;
+}
+
+.button.btn.btn {
     margin-left: 1rem;
     position: relative;
     overflow: hidden;
@@ -378,7 +389,7 @@ h6,
     max-height: 150%;
     width: auto;
     height: 110%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 /*** Team ***/
