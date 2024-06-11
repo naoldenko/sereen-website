@@ -94,5 +94,30 @@
             }
         }
     });
+
+    // Handle form submission
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                formStatus.innerHTML = '<div class="alert alert-success mt-4">Thank you for showing interest! Your message has been sent.</div>';
+                form.reset();
+            } else {
+                formStatus.innerHTML = '<div class="alert alert-danger mt-4">There was an error sending your message. Please try again or contact us directly at hello@sereenminds.com.</div>';
+            }
+        });
+    });
     
 })(jQuery);
