@@ -322,6 +322,28 @@ h6,
     color: #842028 !important;
 }
 
+#mc_embed_signup div.mce_inline_error {
+    margin-top: 0.5rem !important;
+    padding: 5px 10px !important;
+    background-color: #f8d7da !important;
+    border-radius: 0.5rem !important;
+    border-color: #f5c2cf !important;
+    z-index: 1 !important;
+    font-weight: normal !important;
+    color: #842028 !important;
+}
+
+#mce-success-response.response{
+    margin-top: 0.5rem !important;
+    padding: 5px 10px !important;
+    color: #0f5132 !important;
+    background-color: #d1e7dd !important;
+    border-color: #badbcc !important;
+    border-radius: 0.5rem !important;
+    z-index: 1 !important;
+    font-weight: normal !important;
+}
+
 .button.btn.btn {
     margin-left: 1rem;
     position: relative;
