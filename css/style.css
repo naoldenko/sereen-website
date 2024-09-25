@@ -44,6 +44,7 @@ h2,
 
 h3,
 h4,
+p,
 .fw-semi-bold {
     font-weight: 600 !important;
 }
@@ -720,5 +721,28 @@ h6,
     .footer .copyright .footer-menu {
         justify-content: center !important;
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container,
+    .container-fluid {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    [class*="col-"] {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
