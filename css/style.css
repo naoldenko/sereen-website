@@ -7,6 +7,9 @@
     --base: #A8D1D1;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -171,7 +174,7 @@ h6,
     position: relative;
     margin-right: 25px;
     padding: 45px 0;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: var(--light) !important;
@@ -695,3 +698,28 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
+@media (max-width: 767px) {
+    .footer-contact {
+        text-align: center !important;
+    }
+
+    .footer-contact h4,
+    .footer-contact p {
+        text-align: center !important;
+    }
+
+    .footer .d-flex.pt-2 {
+        justify-content: center !important;
+    }
+
+    .footer .copyright .row {
+        text-align: center !important;
+    }
+
+    .footer .copyright .footer-menu {
+        justify-content: center !important;
+        margin-top: 10px;
+    }
+}
+
