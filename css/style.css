@@ -748,19 +748,150 @@ h6,
 }
 
 #research .research-item {
-    transition: all 0.3s ease;
+    transition: .5s;
+    border: none;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+#research .research-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--primary);
+    filter: blur(2px);
+}
+
+#research .research-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background: var(--primary);
+    filter: blur(2px);
+}
+
+#research .research-item > * {
+    position: relative;
+    z-index: 1;
 }
 
 #research .research-item:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
+    margin-top: -15px;
+    box-shadow: 0 .5rem 1.5rem var(--base);
 }
 
-#research .research-item h3 {
-    color: #333;
-    font-size: 1.5rem;
+#research .research-item:hover::before,
+#research .research-item:hover::after {
+    background: var(--primary);
 }
 
-#research .research-item p {
-    color: #666;
+.footer-contact,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-contact h4,
+.footer-social h4 {
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.footer-contact p i {
+    margin-top: 4px;
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer-contact p a,
+.footer-contact p span {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-contact a:hover {
+    opacity: 0.8;
+}
+
+.footer-social .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px; /* Adjust if needed to align with the heading */
+}
+
+.footer-social .btn-social {
+    width: 38px; /* Adjust this value to match your design */
+    height: 38px; /* Adjust this value to match your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    margin: 0 5px 5px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-social .btn-social:hover {
+    background-color: #FFFFFF;
+    color: var(--primary);
+}
+
+.footer-social .btn-social i {
+    font-size: 16px; /* Adjust this value to match your design */
+}
+
+/* Specific adjustment for TikTok icon */
+.footer-social .btn-social .fab.fa-tiktok {
+    transform: translateX(-1px); /* Fine-tune this value to align with 'F' */
+}
+
+@media (max-width: 767px) {
+    .footer-contact,
+    .footer-social {
+        align-items: center;
+    }
+    .footer-contact p,
+    .footer-social .d-flex {
+        justify-content: center;
+    }
+}
+
+#mce-EMAIL::placeholder {
+    color: #999999;  /* Grey color for the placeholder */
+    opacity: 1; /* Needed for Firefox */
+}
+
+/* For Internet Explorer 10-11 */
+#mce-EMAIL:-ms-input-placeholder {
+    color: #999999;
+}
+
+/* For Microsoft Edge */
+#mce-EMAIL::-ms-input-placeholder {
+    color: #999999;
+}
+
+/* Ensure the input text is a different color when typed */
+#mce-EMAIL {
+    color: #000000;  /* Or any color that contrasts with the placeholder */
 }
