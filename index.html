@@ -72,11 +72,12 @@
                     <div class="navbar-nav mx-auto py-0">
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#research" class="nav-item nav-link">Research</a>
                         <a href="#team" class="nav-item nav-link">Team</a>
                         <a href="#contact" class="nav-item nav-link">Investors</a>
                     </div>
                     <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Sign Up to
-                        Beta Waitllist</a>
+                        Beta Waitlist</a>
                 </div>
             </nav>
 
@@ -518,6 +519,38 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Add this new script for improved navigation -->
+    <script>
+        $(document).ready(function() {
+            // Smooth scrolling for navigation links
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70 // Adjust offset as needed
+                    }, 800);
+                }
+            });
+
+            // Update active nav item on scroll
+            $(window).scroll(function() {
+                var scrollPosition = $(window).scrollTop() + $(window).height() / 2;
+                
+                $('.container-xxl[id]').each(function() {
+                    var target = $(this).offset().top;
+                    var id = $(this).attr('id');
+                    
+                    if (scrollPosition >= target) {
+                        $('.navbar-nav a.active').removeClass('active');
+                        $('.navbar-nav a[href="#' + id + '"]').addClass('active');
+                    }
+                });
+            }).scroll();
+        });
+    </script>
+
 </body>
 
 </html>
