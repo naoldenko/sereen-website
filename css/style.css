@@ -895,3 +895,125 @@ h6,
 #mce-EMAIL {
     color: #000000;  /* Or any color that contrasts with the placeholder */
 }
+
+.navbar-nav .nav-link strong {
+    font-weight: 600; /* Adjust this value as needed */
+}
+
+.btn-primary-gradient strong {
+    font-weight: 600; /* Adjust this value as needed */
+}
+
+@media (max-width: 767px) {
+    .footer-contact,
+    .footer .d-flex.flex-column {
+        margin-bottom: 2rem;
+    }
+
+    /* New styles for mobile spacing */
+    .footer .row > div {
+        margin-bottom: 2rem;
+    }
+
+    .footer-contact,
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact h4,
+    .footer-social h4 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-contact p {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-social .d-flex {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer .row > div:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    .footer-contact,
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-contact h4,
+    .footer-social h4 {
+        margin-bottom: 15px;
+    }
+
+    .footer-contact p {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .footer-contact p i {
+        margin-top: 4px;
+        width: 20px;
+        margin-right: 10px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+
+    .footer-contact p a,
+    .footer-contact p span {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+.footer-contact a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-contact a:hover {
+    opacity: 0.8;
+}
+
+.footer-social .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px; /* Adjust if needed to align with the heading */
+}
+
+.footer-social .btn-social {
+    width: 38px; /* Adjust this value to match your design */
+    height: 38px; /* Adjust this value to match your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    margin: 0 5px 5px 0;
+    transition: all 0.3s ease;
+}
+
+.footer-social .btn-social:hover {
+    background-color: #FFFFFF;
+    color: var(--primary);
+}
+
+.footer-social .btn-social i {
+    font-size: 16px; /* Adjust this value to match your design */
+}
+
+/* Specific adjustment for TikTok icon */
+.footer-social .btn-social .fab.fa-tiktok {
+    transform: translateX(-1px); /* Fine-tune this value to align with 'F' */
+}
