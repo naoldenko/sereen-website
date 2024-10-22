@@ -916,3 +916,24 @@ h6,
         margin-right: 2rem;
     }
 }
+
+/* Add these styles for the circular navbar */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: white !important;
+    border-radius: 30px;
+    margin: 10px 20px 0px 0px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .navbar.scrolled {
+        border-radius: 20px;
+        margin: 10px;
+    }
+}

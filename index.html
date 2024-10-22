@@ -179,7 +179,7 @@
                                 <div class="d-flex">
                                     <i class="fa fa-users fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
                                     <div class="ms-3">
-                                        <h2 class="mb-0" data-toggle="counter-up" data-count="139">139</h2>
+                                        <h2 class="mb-0" data-toggle="counter-up" data-count="140">140</h2>
                                         <p class="text-secondary-gradient mb-0">Social Media Followers</p>
                                     </div>
                                 </div>
@@ -488,7 +488,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <!-- Add this new script for improved navigation -->
+    <!-- Add this new script for improved navigation and circular navbar -->
     <script>
         $(document).ready(function() {
             // Smooth scrolling for navigation links
@@ -502,8 +502,16 @@
                 }
             });
 
-            // Update active nav item on scroll
+            // Update active nav item on scroll and change navbar style
             $(window).scroll(function() {
+                var scrollPosition = $(window).scrollTop();
+                
+                if (scrollPosition > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+
                 var scrollPosition = $(window).scrollTop() + $(window).height() / 2;
                 
                 $('.container-xxl[id]').each(function() {
