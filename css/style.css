@@ -514,7 +514,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../img/screenshot-frame.png) center center no-repeat;
+    background: url(../img/screenshot_frame.png) center center no-repeat;
     background-size: 245px 495px;
     z-index: 1;
 }
